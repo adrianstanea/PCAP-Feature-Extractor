@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Attach to cicflowmeter",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/pcap_features/main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-f",
+                "~/datasets/CICDDoS2019/PCAP-03-11/SAT-03-11-2018_0",
+                "-c",
+                "${workspaceFolder}/output/output.csv",
+                "--verbose"
+            ],
+            "justMyCode": false,
+        }
+    ]
+}
